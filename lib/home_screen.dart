@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
                   height: 40.h,
                   width: 50.w,
                   decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: Colors.black87,
                       borderRadius: BorderRadius.circular(6)),
                   child: const Icon(
                     Icons.arrow_back_ios_new,
@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
                   height: 40.h,
                   width: 50.w,
                   decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: Colors.black87,
                       borderRadius: BorderRadius.circular(6)),
                   child: const Icon(
                     Icons.settings,
@@ -121,17 +121,20 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 14.0.w, vertical: 10.0.h),
+            padding: EdgeInsets.symmetric(horizontal: 14.0.w, vertical: 12.0.h),
             child: SizedBox(
               height: 40.h,
               width: double.infinity,
               child: ElevatedButton.icon(
                 onPressed: () {},
-                label: Text("Add to Cart"),
-                icon: Icon(Icons.shopping_bag_outlined),
+                label: Text(
+                  "Add to Cart",
+                  style: TextStyle(fontSize: 16.sp),
+                ),
+                icon: const Icon(Icons.shopping_bag_outlined),
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)),
+                        borderRadius: BorderRadius.circular(8.r)),
                     backgroundColor: Colors.black87,
                     foregroundColor: Colors.white),
               ),
